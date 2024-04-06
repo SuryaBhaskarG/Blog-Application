@@ -1,0 +1,34 @@
+package com.surya.project.controller;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import com.surya.project.entry.User;
+import com.surya.project.service.UserService;
+
+@RestController
+@RequestMapping("/api/users")
+public class UserController {
+    @Autowired
+    private UserService userService;
+
+    @PostMapping
+    public User saveUser(@RequestBody User user) {
+        return userService.saveUser(user);
+    }
+
+
+	@GetMapping("/{id}")
+	public ResponseEntity<User> findUserById(@PathVariable Long id) {
+	    Optional<User> user = userService.findUserById(id);
+
+	    if (user.isPresent()) {
+	        return ResponseEntity.ok(user.get());
+	    } else {
+	        throw new UserNotFoundException("Student with given id not found!"); // Throw the custom exception with a message
+	    }
+	}
+}

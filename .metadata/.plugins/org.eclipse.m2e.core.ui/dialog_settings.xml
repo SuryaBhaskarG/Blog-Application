@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="D:\projects @Java Developers\chatApplication\chat-application-main\backend\chat-service"/>
+			<item value="D:\projects @Java Developers\chatApplication\spring-boot-websocket-chat-app-main"/>
+			<item value="D:\projects @Java Developers\chatApplication\one-to-one-chat-spring-boot-web-socket-main"/>
+			<item value="D:\projects @Java Developers\Thymeleaf Projects\TodoApp"/>
+			<item value="D:\projects @Java Developers\Thymeleaf Projects\bookStore"/>
+			<item value="D:\projects @Java Developers\EC\02-search-by-category-static\03-frontend\angular-ecommerce"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

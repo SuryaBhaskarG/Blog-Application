@@ -1,0 +1,19 @@
+<div class="content">
+    <div class="container mt-5">
+      <div class="row" *ngFor="let post of posts | async">
+        <div class="blogpost">
+          <h3><a href="/post/{{post.id}}" class="blog-title">{{post.title}}</a></h3>
+          <div>
+           <!-- <i class="fas fa-user"></i> Author: <p>{{post.username}}</p>-->
+            <i class="fas fa-user"></i> <span style="display: inline;">Author :  </span> <p style="display: inline;  color: #0e0af3;"> {{ post.username}} </p> 
+          </div>
+          <p [innerHTML]="post.content"></p>
+          <div>
+            <a type="button" href="/post/{{post.id}}" class="  read-more-btn  btn-default">Read More</a>
+          </div>
+          <hr>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>

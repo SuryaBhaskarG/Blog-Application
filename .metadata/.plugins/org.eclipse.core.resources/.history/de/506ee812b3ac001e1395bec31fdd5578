@@ -1,0 +1,11 @@
+package com.surya.project.entry;
+
+public class UserNotFoundException 
+{
+	
+	public UserNotFoundException(String message)
+	{
+		super();
+	}
+	
+}

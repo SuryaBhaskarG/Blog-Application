@@ -1,0 +1,14 @@
+.form-signin {
+    max-width: 420px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the form horizontally */
+  }
+.float-right
+{
+    float: right;
+}  
+
+.form-signin label
+ {
+    font-weight: 500; 
+}
+  

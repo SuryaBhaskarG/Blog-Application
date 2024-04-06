@@ -1,0 +1,24 @@
+package com.surya.project.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import com.surya.project.entry.User;
+import com.surya.project.service.UserService;
+
+@RestController
+@RequestMapping("/api/users")
+public class UserController {
+    @Autowired
+    private UserService userService;
+
+    @PostMapping
+    public User saveUser(@RequestBody User user) {
+        return userService.saveUser(user);
+    }
+
+    @GetMapping("/{id}")
+    public User findUserById(@PathVariable Long id) {
+        return userService.findUserById(id);
+    }
+}

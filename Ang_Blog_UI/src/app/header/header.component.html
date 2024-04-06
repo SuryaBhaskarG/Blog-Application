@@ -1,0 +1,18 @@
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mt-2">
+        <h2><a href="" class="title"> Spring Blog</a></h2>
+      </div> <!-- Title -->
+      <div class="col-md-3" *ngIf="authService.isAuthenticated()">
+          <a href="/add-post" class="new-post ml-5 ">Add Post</a>
+          <button class="logout btn btn-default ml-5 " (click)="logout()">Logout</button>
+      </div>
+      <div class="col-md-6 p-2 ml-3" *ngIf="!authService.isAuthenticated()">
+        <a href="/login" class="login btn btn-default ml-5">Login</a>
+        <a href="/register" class="register btn btn-default ml-5">Register</a>
+      </div> <!-- Login and Register -->
+    </div>
+  </div>
+</div>
+

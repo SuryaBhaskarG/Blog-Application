@@ -1,0 +1,9 @@
+package com.surya.project.entry;
+
+public class UserNotFoundException 
+	  {	
+		  public StudentNotFoundException(String message) 
+		    {
+			   super(message);
+		    }
+	  }
